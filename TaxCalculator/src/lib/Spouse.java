@@ -1,6 +1,6 @@
 package lib;
 
-public class Spouse {
+public class Spouse extends Child {
     String spouseName;
 	String spouseIdNumber;
 
