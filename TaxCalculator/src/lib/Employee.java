@@ -29,9 +29,6 @@ public class Employee extends Spouse {
 	private int monthlySalary;
 	private int otherMonthlyIncome;
 	private int annualDeductible;
-
-	private List<String> childNames;
-	private List<String> childIdNumbers;
 	
 	public Employee(String employeeId, String firstName, String lastName, String idNumber, String address, Date joinedDate, boolean isForeigner, Gender gender) {
 		this.employeeId = employeeId;
@@ -42,9 +39,6 @@ public class Employee extends Spouse {
 		this.joinedDate = joinedDate;
 		this.isForeigner = isForeigner;
 		this.gender = gender;
-		
-		childNames = new LinkedList<String>();
-		childIdNumbers = new LinkedList<String>();
 	}
 	
 	public void setMonthlySalary(int grade) {	
@@ -70,11 +64,6 @@ public class Employee extends Spouse {
 	
 	public void setAdditionalIncome(int income) {	
 		this.otherMonthlyIncome = income;
-	}
-	
-	public void addChild(String childName, String childIdNumber) {
-		childNames.add(childName);
-		childIdNumbers.add(childIdNumber);
 	}
 	
 	public int getAnnualIncomeTax() {
