@@ -20,6 +20,7 @@ public class Employee {
 	private String address;
 	
 	private Date joinedDate;
+
 	private int monthWorkingInYear;
 	
 	private boolean isForeigner;
