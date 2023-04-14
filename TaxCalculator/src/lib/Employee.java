@@ -11,7 +11,7 @@ public enum Gender {
 	FEMALE
 }
 
-public class Employee {
+public class Employee extends Spouse {
 
 	private String employeeId;
 	private String firstName;
@@ -29,9 +29,6 @@ public class Employee {
 	private int monthlySalary;
 	private int otherMonthlyIncome;
 	private int annualDeductible;
-	
-	private String spouseName;
-	private String spouseIdNumber;
 
 	private List<String> childNames;
 	private List<String> childIdNumbers;
@@ -73,11 +70,6 @@ public class Employee {
 	
 	public void setAdditionalIncome(int income) {	
 		this.otherMonthlyIncome = income;
-	}
-	
-	public void setSpouse(String spouseName, String spouseIdNumber) {
-		this.spouseName = spouseName;
-		this.spouseIdNumber = idNumber;
 	}
 	
 	public void addChild(String childName, String childIdNumber) {
